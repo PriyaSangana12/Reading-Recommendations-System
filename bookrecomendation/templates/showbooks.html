@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+    
+{% block content %}
+<section>
+    <h1>
+        Show books
+    </h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+        </tr>
+    {% for item in data %}
+    
+        <tr>
+            <td>{{item.title}}</td>
+            <td>{{item.author}}</td>
+            <td>{{item.genre}}</td>
+        </tr>
+    
+    {% endfor %}
+</table>
+</section>
+{% endblock %}

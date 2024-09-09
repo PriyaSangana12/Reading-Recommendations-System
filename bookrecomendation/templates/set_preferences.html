@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+    
+{% block content %}
+<section id="set-preferences">
+    <h2>Set Preferences</h2>
+    <form id="preferences-form">
+        <input type="number" id="preferences-user-id" placeholder="User ID" required>
+        <input type="text" id="preferences-genres" placeholder="Preferred Genres (comma-separated)" required>
+        <input type="text" id="preferences-authors" placeholder="Preferred Authors (comma-separated)" required>
+        <button type="submit">Set Preferences</button>
+    </form>
+    <p id="preferences-message"></p>
+</section>
+{% endblock %}

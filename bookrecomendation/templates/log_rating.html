@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+    
+{% block content %}
+<section id="log-rating">
+    <h2>Log Rating</h2>
+    <form id="log-rating-form">
+        <input type="number" id="rating-user-id" placeholder="User ID" required>
+        <input type="number" id="rating-book-id" placeholder="Book ID" required>
+        <input type="number" id="rating-value" placeholder="Rating (1-5)" required>
+        <textarea id="rating-review" placeholder="Review"></textarea>
+        <button type="submit">Log Rating</button>
+    </form>
+    <p id="log-rating-message"></p>
+</section>
+{% endblock %}

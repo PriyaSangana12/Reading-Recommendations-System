@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+    
+{% block content %}
+<section id="recommendations">
+    <h2>Get Recommendations</h2>
+    <form id="recommendations-form">
+        <input type="number" id="recommendations-user-id" placeholder="User ID" required>
+        <button type="submit">Get Recommendations</button>
+    </form>
+    <ul id="recommendations-list"></ul>
+</section>
+{% endblock %}

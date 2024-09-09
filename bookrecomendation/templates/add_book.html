@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+    
+{% block content %}
+<section id="add-book">
+    <h2>Add Book</h2>
+    <form id="add-book-form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Book</button>
+    </form>
+    <p id="add-book-message"></p>
+</section>
+{% endblock %}

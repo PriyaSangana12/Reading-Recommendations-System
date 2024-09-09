@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Personalized Reading Recommendation{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+</head>
+<body>
+    <header>
+        <h1>Personalized Reading Recommendation System</h1>
+        <nav>
+            <ul>
+                <!-- <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li> -->
+                <li><a href="{% url 'add_book' %}">Add Book</a></li>
+                <li><a href="{% url 'show_book' %}">Show Book</a></li>
+                <li><a href="{% url 'log_rating' %}">Log Rating</a></li>
+                <li><a href="{% url 'set_preferences' %}">Set Preferences</a></li>
+                <li><a href="{% url 'get_recommendations' %}">Get Recommendations</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
